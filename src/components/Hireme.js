@@ -1,5 +1,5 @@
 import React,{useState,useRef} from 'react'
-import useStyles from '../style';
+import {useStyles} from '../style';
 import {Card,CardContent,Container,TextField,Button,Typography} from '@mui/material';
 import emailjs from '@emailjs/browser';
 

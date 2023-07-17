@@ -1,26 +1,41 @@
+import stackImage from './projectimg/stack-overflow.png';
+import socialImage from './projectimg/social.png';
+import modernImage from './projectimg/Modern.png';
+import Drumkit from './projectimg/drumkit.png'
+
 const projectimg=[
 
     {
         id:1,
-        image:'./projectimg/movi.jpg',
-        heading:'The movie-app',
-        discription:'This is react.js beginner level project. In which I learnt apis and react hooks.',
-        link:'https://soniiya.github.io/moviland-react'
+        image: stackImage,
+        heading:'Stack-overflow clone',
+        discription:'',
+        live:'https://stack-overflow-sonia.netlify.app/',
+        github:'https://github.com/soniiya/StackOverflow-clone.git'
     },
     {
         id:2,
-        image:'./projectimg/blog.jpg',
-        heading:'Blogging website',
+        image: socialImage,
+        heading:'Photo-sharing application',
         discription:'I tried to build a full-stack blogging site using MEAN stack.',
-        link:'https://github.com/soniiya/Blogging-final.git'
+        live:'https://social-media-react-project.netlify.app/',
+        github:''
     },
     {
         id:3,
-        image:'./projectimg/mordern.jpg',
-        heading:'Mordern UI/UX react-project',
+        image:modernImage,
+        heading:'Modern UI/UX frontend-project',
         discription:'This is mordern UI/UX based styles frontend project.',
-        link:'https://soniiya.github.io/modern-ui-react'
-    }
+        live:'https://soniiya.github.io/modern-ui-react',
+        github:'https://github.com/soniiya/modern-ui-react.git'
+    },
+    // {
+    //     id:4,
+    //     image:Drumkit,
+    //     heading:'Drum-kit',
+    //     discription:'This is mordern UI/UX based styles frontend project.',
+    //     link:'https://soniiya.github.io/Drum-kit'
+    // }
 ]
 
 export default projectimg

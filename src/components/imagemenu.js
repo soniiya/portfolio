@@ -1,48 +1,58 @@
+import sunsetImage from './images/img1.jpg';
+import blackholeImage from './images/img2.jpg';
+import dreamImage from './images/img3.jpg';
+import shivImage from './images/img4.jpg';
+import northernImage from './images/img5.jpg';
+import moonImage from './images/img6.jpg';
+import candleImage from './images/img7.jpg';
+import pizzaImage from './images/img8.jpg';
+import rainyImage from './images/img9.jpg';
+
 const imagemenu = [
    
     {
         id:1,
-        image:'./images/img1.jpg',
+        image:sunsetImage,
         name:'I am a sunset lover'
     },
     {
         id:2,
-        image:'./images/img2.jpg',
+        image:blackholeImage,
         name:'Supermassive-blackhole'
     },
     {
         id:3,
-        image:'./images/img3.jpg',
+        image:dreamImage,
         name:'In my Dreams '
     },
     {
         id:4,
-        image:'./images/img4.jpg',
+        image:shivImage,
         name:'Namo Namo Shankara'
     },
     {
         id:5,
-        image:'./images/img5.jpg',
+        image:northernImage,
         name:'Damn beautiful lights'
     },
     {
         id:6,
-        image:'./images/img6.jpg',
+        image:moonImage,
         name:'Super-Moon'
     },
     {
         id:7,
-        image:'./images/img7.jpg',
+        image:candleImage,
         name:'Beautiful Candles'
     },
     {
         id:8,
-        image:'./images/img8.jpg',
+        image:pizzaImage,
         name:'Craving for pizza'
     },
     {
         id:9,
-        image:'./images/img9.jpg',
+        image:rainyImage,
         name:'Rainy days'
     }
 ]
