@@ -1,5 +1,5 @@
-import React,{useState,useEffect} from 'react';
-import {Link,Typography,Card,CardActions,CardContent,CardMedia,cardGrid,Grid,Container,Button} from '@mui/material';
+import React from 'react';
+import {Link,Typography,Card,CardActions,CardContent,CardMedia,Grid,Container,Button} from '@mui/material';
 import projectimg from './projectimg';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme';
@@ -8,7 +8,7 @@ import {useStyles} from '../style';
 
 function Projects() {
   const classes = useStyles();
-  const [photos,setPhotos] = useState([]);
+  //const [photos,setPhotos] = useState([]);
   
 
   // useEffect(()=>{
@@ -42,7 +42,6 @@ function Projects() {
 
 return (
 <div>
-
 <ThemeProvider theme={theme}>
 
 <Container className={classes.cardGrid} maxWidth="md"> 
@@ -65,14 +64,17 @@ return (
             </CardContent>
             <CardActions sx={{display:'flex', justifyContent:'space-between'}} >
               <div>
-              <a href={live}>
+              {/* <a href={live}>
                 <Button>Live preview</Button>
-              </a>
+              </a> */}
+              <Link href={live}>
+                <Button>Live preview</Button>
+              </Link>
               </div>
               <div>
-              <a href={github}>
+              <Link href={github}>
                 <Button>GitHub</Button>
-              </a>
+              </Link>
               </div>
               {/* <a href={link}>
                 <Button>Live preview</Button>

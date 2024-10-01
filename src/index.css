@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Crimson+Text:ital@0;1&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Neuton:wght@300&family=Crimson+Text:ital@0;1&family=Lobster&display=swap');
 
 body {
   background-color: #0a1929;
@@ -15,8 +15,9 @@ body {
 }
 
 :root {
-  --font-base: 'Cormorant', serif;
-  --font-alt: 'Crimson Text', serif;
+  --font-base: 'Crimson Text', serif;
+  --font-diff: 'Cormorant', serif;
+  --font-alt: 'Neuton', sans-serif;
   --font-para: 'Lobster', cursive;
 
   

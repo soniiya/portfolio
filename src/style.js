@@ -2,6 +2,7 @@ import {makeStyles} from '@mui/styles';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme.js';
 import { createTheme } from '@mui/material/styles';
+import Viewimage from './components/Viewimage.js';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -35,15 +36,16 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'var(--font-base)',
     color:'white',
      textAlign: 'center',
-     marginBottom: '4rem',
-     textDecoration: '2px underline linear-gradient(to right, #ff00cc, #3333ff)'
-  }, 
+     textDecoration: '2px underline linear-gradient(to right, #ff00cc, #3333ff)',
+      margin: '4rem 0rem' 
+    }, 
 
   cardGrid:{
-    padding:'100px 0',
+    padding:'30px 0',
     margin:'2rem 0'
   },
   card:{
+    marginTop: '2rem',
     width:'100%',
     height:'100%',
     display: 'flex',
@@ -55,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     //   transform: 'scale(1)', // Add the initial scale transformation
 
     '&:hover': {
-      transform: 'scale(1.1)',
+      transform: 'scale(1.025)',
       boxShadow: '0 8px 16px rgba(0,0,0,0.2)',
     },
 
@@ -79,16 +81,33 @@ const useStyles = makeStyles((theme) => ({
   },
 
   container:{
+    display: 'flex'
+  },
+
+  footerContainer: {
     display: 'flex',
-    flexDirection: 'row',
-  
+    '@media (max-width: 280px)': {
+      flexDirection: 'column',
+    }
   },
   
   content: {
     width: '100%',
     maxWidth: '1140px',
     margin: '1rem 1rem',  
+  },
+
+  viewimage_container: {
+    width: '300px',
+    height: '200px',
+
+  '&.img': {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    transition: 'transform 0.3s ease-in-out'
   }
+}
  
 }));
 

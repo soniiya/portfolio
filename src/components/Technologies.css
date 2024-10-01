@@ -1,7 +1,3 @@
-.tech__padding {
-    padding: 2rem 8rem;
-  }
-  
 .flex__center {
     display: flex;
     justify-content: center;
@@ -10,24 +6,41 @@
 
 .app_container{
     width:100%;
-    margin: 2rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 2rem
 }
 
 .app_menu {
     align-items: flex-start;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
 }
 
 .app_items{
+    width: 30%;
     flex-direction: column;
 }
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    border-radius: 5px;
+  }
+
+  .progress {
+    height: 100%;
+    background: linear-gradient(to right, #ff00cc, #3333ff);; /* Choose your desired color */
+    width: 50%; /* Adjust this value to represent the percentage of knowledge */
+  }
+  
 
 @media screen and (max-width: 1150px){
     .tech__padding{
@@ -43,9 +56,13 @@
 
 @media screen and (max-width: 650px){
    .tech__padding{
-    padding: 2rem 1rem;
+    padding: 0 2rem;
    }
-   /* .app_menu{
+   .app_menu{
     flex-direction: column;
-   } */
+   }
+   .app_items{
+    margin: 2rem;
+    width: 80%;
+   }
 }

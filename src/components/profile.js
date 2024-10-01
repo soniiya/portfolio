@@ -5,37 +5,30 @@ import theme from '../theme';
 import {useStyles} from '../style';
 import './profile.css';
 
-
-const downloadFile = () => {
-  const fileUrl = 'https://www.dropbox.com/s/z6s0g7936niuvc7/My-resume.pdf?dl=1';
-  const link = document.createElement('a');
-  link.href = fileUrl;
-  link.download = 'myresume.pdf';
-  link.click();
-};
-
 function Profile() {
-const classes=useStyles();
+const classes = useStyles();
 
 return (
-<>
+<div>
 <ThemeProvider theme={theme}>
 <div className='app__wrapper section__padding'>
 <div className='app__wrapper_info section__padding'>
   <h2 className=''>Hi, I'm</h2>
   <h1 className='gradient-text'>SONIYA JAISWAL</h1>
-  <p>A young web developer</p>
+  <p>Software developer</p>
 
-<a href="https://www.dropbox.com/s/z6s0g7936niuvc7/My-resume.pdf?dl=1" download='resume.pdf'>
-<button className='profile_btn' onClick={downloadFile}>Download Resume</button>
+<a href="https://drive.google.com/uc?export=download&id=1OWrWFGwaHxlsnoh0GrCydzfgq6amt4HA" target="_blank" rel="noopener noreferrer" download>
+  <button className='profile_btn'>Download Resume</button>
 </a>
-
 </div>
+
+{/* https://www.dropbox.com/scl/fi/yvynlbequt68bokdgjyhs/Soniya_resume2.pdf?dl=1 */}
+{/* https://www.dropbox.com/scl/fi/8eubbh6knounxdd19uwo4/Soniya_resume.pdf?dl=1 */}
 
 <div className='app__wrapper_img'>
 <img src={profile} />
 
-<div className='gradient-circle'></div>
+{/* <div className='gradient-circle'></div> */}
 
 <div className='gradient-ring'>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="350" height="350">
@@ -53,7 +46,7 @@ return (
 </div> 
 </ThemeProvider>
 
-</>
+</div>
 )
 }
 
@@ -65,7 +58,7 @@ export default Profile
  <Typography className={classes.app__wrapper_info} variant="h4" gutterBottom> Hi, I'm</Typography>
  <Typography className={classes.app__wrapper_info} variant='h2' style={{alignContent:'center',marginBottom:'20px'}}> SONIA JAISWAL</Typography>
    <Typography className={classes.app__wrapper_info} variant="h7" paragraph>
-    A young web developer. 
+    Software developer 
   </Typography>
   <Button className=''>Download Resume</Button>
 </Grid>

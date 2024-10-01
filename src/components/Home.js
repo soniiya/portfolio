@@ -11,7 +11,6 @@ function Home() {
     <Profile />
     <Projects />
     <Technologies />
-    <Arts />
     <Footer />
   </>
   )

@@ -13,7 +13,7 @@ const imagemenu = [
     {
         id:1,
         image:sunsetImage,
-        name:'I am a sunset lover'
+        name:'sunset on beach'
     },
     {
         id:2,
